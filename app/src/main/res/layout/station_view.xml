@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginBottom="10dp"
+    android:background="#55f">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textColor="#fff"/>
+
+    <TextView
+        android:id="@+id/distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="#fff"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"/>
+
+    <GridLayout
+        android:id="@+id/grid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        android:alignmentMode="alignBounds"
+        android:columnCount="4"
+        android:rowOrderPreserved="false"
+        android:useDefaultMargins="true"
+
+        android:layout_below="@+id/name">
+    </GridLayout>
+
+</RelativeLayout>
